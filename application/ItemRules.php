@@ -4,13 +4,12 @@ declare (strict_types = 1);
 
 require 'autoload.php';
 
+define('SINGLE_DISCOUNT', 1);
+define('MULTIPLE_DISCOUNT', 2);
+define('DISCOUNTED_ITEM', 3);
+
 class ItemRules 
 {
-    public const SINGLE_DISCOUNT = 1;
-    public const MULTIPLE_DISCOUNT = 2;
-    public const DISCOUNTED_ITEM = 3;
-
-
     private static array $rules = [
         [
             'sku' => 'A',
